@@ -39,7 +39,7 @@
         <tr th:each="skill: ${skillsList}">
             <td></td>
             <td th:text="${skill.getString(0)}"></td>
-            <td th:text="${skill.get(1).toString()}"></td>
+            <td th:text="${skill.get(1)}"></td>
         </tr>
         </tbody>
     </table>

@@ -108,7 +108,7 @@
             <tr th:each="job: ${jobList}">
                 <td></td>
                 <td th:text="${job.getString(0)}"></td>
-                <td th:text="${job.get(1).toString()}"></td>
+                <td th:text="${job.get(1)}"></td>
             </tr>
             </tbody>
         </table>

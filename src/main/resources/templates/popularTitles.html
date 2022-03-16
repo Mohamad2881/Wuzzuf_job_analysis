@@ -85,7 +85,7 @@
             <tr th:each="title,state : ${titleList}">
                 <td></td>
                 <td th:text="${title.getString(0)}"></td>
-                <td th:text="${title.get(1).toString()}"></td>
+                <td th:text="${title.get(1)}"></td>
             </tr>
             </tbody>
         </table>
