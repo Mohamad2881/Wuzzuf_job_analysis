@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Wuzzuf Analytics</title>
+
+    <link rel="icon" th:href="@{/images/icons8-w-64.png}">
+
+    <link rel="stylesheet" th:href="@{css/style.css?v9}">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+</head>
+<body>
+<!--    <div class="container">-->
+<!--        <button onclick="location.href='http://localhost:8080/showData'"><span>Show Data</span></button>-->
+<!--        <button onclick="location.href='http://localhost:8080/summary'"><span>Show Structure and Summary</span></button>-->
+<!--        <button onclick="location.href='http://localhost:8080/jobCount'"><span>No of jobs per company</span></button>-->
+
+<!--    </div>-->
+<!--    <div class="container">-->
+<!--        <button onclick="location.href='http://localhost:8080/popularTitles'">-->
+<!--            <span>Show popular Job Title</span></button>-->
+
+<!--        <button onclick="location.href='http://localhost:8080/popularAreas'">-->
+<!--        <span >Show popular Areas</span></button>-->
+
+<!--        <button onclick="location.href='http://localhost:8080/popularSkills'">-->
+<!--            <span>Show popular Skills</span></button>-->
+<!--    </div>-->
+
+    <div class="page-section bg-light">
+        <div class="container">
+            <div class="text-center wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                <h1 class="title-section text-center">Wuzzuf Jobs Analysis in Egypt</h1>
+                <h2 class="title-section">Our services</h2>
+                <div class="divider mx-auto text-center"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 col-lg-4 col-xl-3 py-3 wow zoomIn" style="visibility: visible; animation-name: zoomIn;">
+                    <div class="features">
+                        <div class="header mb-3 hover" onclick="location.href='http://localhost:8080/showData'" >
+                            <img src="https://png.pngtree.com/png-vector/20190726/ourlarge/pngtree-reports-icon-for-your-project-png-image_1599310.jpg"
+                                 class="header"
+                                 width="100"
+                                 height="100"/>
+<!--                            <img th:src="@{/images/icons8-w-64.png}">-->
+                        </div>
+                        <h5>Show Data</h5>
+                        <p>Load dataset and remove duplicates and NULL Values</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-3 py-3 wow zoomIn" style="visibility: visible; animation-name: zoomIn;">
+                    <div class="features">
+                        <div class="header mb-3 hover" onclick="location.href='http://localhost:8080/summary'">
+                            <img src="https://png.pngtree.com/png-vector/20190726/ourlarge/pngtree-reports-icon-for-your-project-png-image_1599310.jpg"
+                                 class="header"
+                                 width="100"
+                                 height="100"/>
+                        </div>
+                        <h5>Show Structure and Summary</h5>
+                        <p>Display structure and summary of the data</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-3 py-3 wow zoomIn" style="visibility: visible; animation-name: zoomIn;">
+                    <div class="features">
+                        <div class="header mb-3 hover" onclick="location.href='http://localhost:8080/jobCount'">
+                            <img src="https://png.pngtree.com/png-vector/20190726/ourlarge/pngtree-reports-icon-for-your-project-png-image_1599310.jpg"
+                                 class="header"
+                                 width="100"
+                                 height="100"/>
+                        </div>
+                        <h5>Show most demanding companies for jobs</h5>
+                        <p>Count the jobs for each company and display that in order </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-3 py-3 wow zoomIn" style="visibility: visible; animation-name: zoomIn;">
+                    <div class="features">
+                        <div class="header mb-3 hover" onclick="location.href='http://localhost:8080/popularTitles'">
+                            <img src="https://png.pngtree.com/png-vector/20190726/ourlarge/pngtree-reports-icon-for-your-project-png-image_1599310.jpg"
+                                 class="header"
+                                 width="100"
+                                 height="100"/>
+                        </div>
+                        <h5>Show popular job titles</h5>
+                        <p>Find out what are the most popular job titles.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-3 py-3 wow zoomIn" style="visibility: visible; animation-name: zoomIn;">
+                    <div class="features">
+                        <div class="header mb-3 hover" onclick="location.href='http://localhost:8080/popularAreas'">
+                            <img src="https://png.pngtree.com/png-vector/20190726/ourlarge/pngtree-reports-icon-for-your-project-png-image_1599310.jpg"
+                                 class="header"
+                                 width="100"
+                                 height="100"/>
+                        </div>
+                        <h5>Show popular Area</h5>
+                        <p>Find out the most popular areas</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-3 py-3 wow zoomIn" style="visibility: visible; animation-name: zoomIn;">
+                    <div class="features">
+                        <div class="header mb-3 hover" onclick="location.href='http://localhost:8080/popularSkills'">
+                            <img src="https://png.pngtree.com/png-vector/20190726/ourlarge/pngtree-reports-icon-for-your-project-png-image_1599310.jpg"
+                                 class="header"
+                                 width="100"
+                                 height="100"/>
+                        </div>
+                        <h5>Show popular Skills</h5>
+                        <p> Find out the most important skills required</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-3 py-3 wow zoomIn" style="visibility: visible; animation-name: zoomIn;">
+                    <div class="features">
+                        <div class="header mb-3 hover" onclick="location.href='http://localhost:8080/factorize'">
+                            <img src="https://png.pngtree.com/png-vector/20190726/ourlarge/pngtree-reports-icon-for-your-project-png-image_1599310.jpg"
+                                 class="header"
+                                 width="100"
+                                 height="100"/>
+                        </div>
+                        <h5>Factorize</h5>
+                        <p>Factorize the YearsExp feature and convert it to numbers in new col.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-3 py-3 wow zoomIn" style="visibility: visible; animation-name: zoomIn;">
+                    <div class="features">
+                        <div class="header mb-3 hover" onclick="location.href='http://localhost:8080/kMeans'">
+                            <img src="https://png.pngtree.com/png-vector/20190726/ourlarge/pngtree-reports-icon-for-your-project-png-image_1599310.jpg"
+                                 class="header"
+                                 width="100"
+                                 height="100"/>
+                        </div>
+                        <h5>K-Means</h5>
+                        <p>Apply K-means for job title and companies</p>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- .container -->
+    </div>
+
+</body>
+</html>
